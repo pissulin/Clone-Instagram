@@ -1,0 +1,211 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-phone {
+    position: relative;
+}
+
+@media (max-width: 875px){
+    .instagram-wrapper{
+        flex-direction: column;
+    }
+    .instagram-phone {
+        display: none;
+    }
+    
+}
+
+.instagram-phone .phone{
+    height: 600px;
+}
+
+.instagram-continue {
+    display: flex;
+    flex-direction: column;
+}
+
+.group-login {
+    border: #dbdbdb solid 1px;
+    padding:0 10px ;
+    text-align: center;
+}
+.titulo{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+    color: #262626;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 0 24px;
+}
+
+input {
+    margin-bottom: 5px;
+    border-radius: 3px;
+    padding: 10px 10px;
+    border: solid 1px #dbdbdb ;
+}
+
+.submit {
+    background-color: #0095F6;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 0;
+    height: 30px;
+}
+
+.divisor {
+    display: flex;
+    
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.divisor > p {
+    margin: 0 10px;
+    color: #929090;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linhaDivisora {
+    width: 109px;
+    height: 1px;
+    margin-top: 4px;
+    background-color: #bdbdbd;
+}
+
+.loginRedeSocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginRedeSocial img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.loginRedeSocial a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.loginRedeSocial p {
+    margin-left: 5px;
+    color: #4267b2;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recuperarSenha {
+    text-decoration: none;
+    color: #4267b2;
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.cadastro {
+    border: #dbdbdb solid 1px;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.cadastro p {
+    color: #555555;
+}
+
+.cadastro a {
+    color: #0095F6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.baixarApp {
+    text-align: center;
+}
+
+.baixarApp p {
+    color: #555555;
+    margin: 15px 0;
+}
+
+.botoesLojaApp {
+    display:flex;
+    justify-content: center;
+}
+
+.botoesLojaApp img {
+    width: 150px;
+    margin: 0 5px 0 5px;
+}
+
+footer {
+    width: 60vw;
+    height: 50px;
+    margin: 80px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #555555
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 13px;
+}
+
+footer ul li {
+    margin: 2px 5px 2px 5px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.tela {
+    opacity: 0;
+    width: 240px;
+    height: 425px;
+    position: absolute;
+    top: 93px;
+    right: 58px;
+    transition: opacity 2000ms  
+}
+
+.selected{
+    opacity: 1;;
+}

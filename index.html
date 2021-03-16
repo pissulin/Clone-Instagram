@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="style.css">
+        <title>Instagram</title>
+    </head>
+    <body>
+       <div class="instagram-wrapper">
+            <div class="instagram-phone">
+                <img class="phone" src="./img/celulares.png" alt="celulares" >
+                <img class="selected tela" src="./img/tela1.jpg" alt="imagem display phone">
+                <img class="tela" src="./img/tela2.jpg" alt="imagem display phone">
+                <img class="tela" src="./img/tela3.jpg" alt="imagem display phone">
+                <img class="tela" src="./img/tela4.jpg" alt="imagem display phone">
+                <img class="tela" src="./img/tela5.jpg" alt="imagem display phone">
+            </div>
+            <div class="instagram-continue">
+                 <div class="group-login">
+                    <h1 class="titulo">Instagram</h1>
+                    <div class="form">
+                        <label for="username"></label>
+                        <input type="text" id="username" placeholder="Phone number, username, or email">
+                        <label for="senha"></label>
+                        <input type="password" id="senha" placeholder="Senha">
+                        <button class="submit" type="submit">Log in</button>
+                        <div class="divisor">
+                            <span class="linhaDivisora"></span><p>OU</p><span class="linhaDivisora"></span>
+                        </div>
+                        <div class="loginRedeSocial">
+                            <a target="_blank" href="https://www.facebook.com"><img src="./img/facebook.png" alt="logo facebook"><p>Log in with Facebook</p></a>
+                        </div>
+                        <a class="recuperarSenha" href="#">Recuperar senha ?</a>
+                    </div>
+                </div>
+                <div class="cadastro">
+                    <p>Não tem conta ?<a href="#">  Criar uma</a></p>
+                </div>
+                <div class="baixarApp">
+                    <p>Get the app.</p>
+                    <div class="botoesLojaApp">
+                        <a target="_blank" href="https://www.apple.com/"><img src="./img/button-apple.png" alt="botão loja apple"></a>
+                        <a target="_blank" href="https://www.android.com/intl/pt-BR_br/"><img src="./img/button-android.png" alt="botão loja android"></a>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <footer>
+        <ul>
+            <li><a href="/">Sobre</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Carreiras</a></li>
+            <li><a href="/">Ajuda</a></li>
+            <li><a href="/">API</a></li>
+            <li><a href="/">Privacidade</a></li>
+            <li><a href="/">Termos</a></li>
+            <li><a href="/">Contas mais relevantes</a></li>
+            <li><a href="/">Hashtags</a></li>
+            <li><a href="/">Localizações</a></li>
+            <li><a href="/">Beleza</a></li>
+            <li><a href="/">Dança e apresentação</a></li>
+            <li><a href="/">Fitness</a></li>
+            <li><a href="/">Comida e bebida</a></li>
+            <li><a href="/">Casa e jardim</a></li>
+            <li><a href="/">Música</a></li>
+            <li><a href="/">Arte visuais</a></li>
+        </ul>
+        <p><a href="/">Português ▽</a> &nbsp &nbsp   ⓒ 2021 Instagram do Facebook - CÓPIA by Anderson Pissulin</p>
+    </footer>
+
+    <script>
+
+        let time = 5000,
+        imagemIndex = 0,
+        images = document.querySelectorAll('.tela')
+        max = images.length
+
+        nextImage = ()=>{
+
+            images[imagemIndex].classList.remove('selected')
+
+            imagemIndex++
+
+            if(imagemIndex >= max){
+                imagemIndex = 0
+            }
+
+            images[imagemIndex].classList.add('selected')
+        }
+
+        function start(){
+            setInterval(()=>{
+                nextImage()
+            }, time)
+        }
+       
+        window.addEventListener('load',start)
+        /*const images = ['./img/tela1.jpg', './img/tela2.jpg', './img/tela3.jpg', './img/tela4.jpg']
+        const fotos = document.getElementsByClassName('tela')[0].attributes[1].value
+        
+        //console.log(images[1])*/
+
+
+
+    </script>
+    </body>
+</html>
