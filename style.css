@@ -198,11 +198,11 @@ footer p {
 
 .tela {
     opacity: 0;
-    width: 235px;
+    width: 233px;
     height: 418px;
     position: absolute;
     top: 95px;
-    right: 60px;
+    right: 61px;
     transition: opacity 2000ms  
 }
 
